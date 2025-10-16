@@ -69,7 +69,7 @@ Testabilidade: foco em ViewModels e Widgets com mocks de dependências.
 |                        |         |                                 |
 
 Confira o relatório completo de cobertura de testes gerado automaticamente:  
-👉 [Ver relatório de cobertura](./coverage_report/index.htm)
+👉 [Ver relatório de cobertura](./coverage_report/index.html)
 
 Para rodar os testes:
 
