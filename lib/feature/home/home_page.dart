@@ -1,5 +1,6 @@
 import 'package:encurtalinkapp/core/themes/colors/dimens.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shimmer/shimmer.dart';
 import 'home_viewmodel.dart';
 
@@ -103,12 +104,8 @@ class _HomePageState extends State<HomePage> {
                               subtitle: Text(item.originalUrl),
                               trailing: IconButton(
                                 icon: const Icon(Icons.copy),
-                                onPressed: () {
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
-                                      content: Text("Link copiado!"),
-                                    ),
-                                  );
+                                onPressed: () async {
+                                  await Clipboard.setData(ClipboardData(text: item.shortUrl));
                                 },
                               ),
                             ),
