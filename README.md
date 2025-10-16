@@ -21,14 +21,17 @@ O objetivo do app é **encurtar links** e **exibir uma lista** dos links encurta
 
 O projeto segue a **arquitetura oficial recomendada pelo Flutter**, baseada em **MVVM** (Model-View-ViewModel):
 
-lib/
-├── core/ →  Temas, dimensões e utilitários
-├── data/ → Repositórios e fontes de dados (API, local, etc)
-├── domain/ → Modelos e casos de uso (regras de negócio)
-├── util/ → Result, e Command
-├── feature/
-│ └── home/ → View, ViewModel e componentes da tela principal
-└── main.dart → Ponto de entrada da aplicação
+### Estrutura do Projeto
+
+- **lib/**
+    - **core/** → Temas, dimensões e utilitários
+    - **data/** → Repositórios e fontes de dados (API, local, etc.)
+    - **domain/** → Modelos e casos de uso (regras de negócio)
+    - **util/** → Classes auxiliares como `Result` e `Command`
+    - **feature/**
+        - **home/** → View, ViewModel e componentes da tela principal
+    - **main.dart** → Ponto de entrada da aplicação
+
 
 
 ✅ **Motivos para usar MVVM**:
